@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#orderForm">Order Now!</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home">
+        <h1>PIZZA COMPANY</h1>
+        <hr />
+        <p>Customizable pizzas great for anyone in the family.</p> <br />
+    </div>
+
+
+    <!--START Menu with size prices and toppings/essentials-->
+    <div id="Menu">
+        <h1> MENU</h1>
+        <hr />
+        <h2> Sizes </h2>
+        <p> Personal<br /><em>$6.00</em></p>
+        <p> Medium<br /><em>$10.00</em></p>
+        <p> Large<br /> <em>$14.00</em></p>
+        <p> XLarge<br /> <em>$16.00</em></p>
+        <br /><br />
+        <h2> Toppings and Essentials</h2>
+        <p> Toppings <em> (One veggie and One meat is included in the price. Extras are $1.00 per topping.)</em></p>
+
+        <ul>
+            <li>Pepperoni</li>
+            <li>Sausage</li>
+            <li>Canadian Bacon</li>
+            <li>Ground Beef</li>
+            <li>Anchovy</li>
+            <li>Chicken</li>
+            <li>Tomatoes</li>
+            <li>Onions</li>
+            <li>Olives</li>
+            <li>Green Peppers</li>
+            <li>Mushrooms</li>
+            <li>Pineapple</li>
+            <li>Spinach</li>
+            <li>Jalapeno</li>
+        </ul>
+        <p> Crust</p>
+        <ul>
+            <li>Plain Crust</li>
+            <li>Garlic Butter Crust</li>
+            <li>Cheese Stuffed Crust*</li>
+            <li>Spicy Crust</li>
+            <li>House Special Crust</li>
+        </ul>
+        <em>*The Cheese Stuffed Crust is an additional $3.00.</em>
+        <p> Cheese</p>
+        <ul>
+            <li>Regular</li>
+            <li>No Cheese</li>
+            <li>Extra Cheese*</li>
+        </ul>
+        <em>*Extra cheese is an additional $3.00</em>
+        <p> Sauce</p>
+        <ul>
+            <li>Marinara Sauce</li>
+            <li>White Sauce</li>
+            <li>Barbeque Sauce</li>
+            <li>No Sauce</li>
+        </ul>
+    </div>
+    <!-- END Menu with size prices and toppings/essentials-->
+    
+    <!--START order form-->
+    <div id="orderForm">
+        <h1> Order Form</h1>
+        <hr />
+        <p><em>BUILD ONE PIZZA AT A TIME.</em></p>
+        <h2>Step 1: Size</h2>
+        <form>
+            <input type="radio" value="personal" name="size" /> Personal
+            <input type="radio" value="medium" name="size" /> Medium
+            <input type="radio" value="large" name="size" /> Large
+            <input type="radio" value="extraLarge" name="size" /> Extra Large
+        </form>
+        <h2>Step 2: Crust</h2>
+        <form>
+            <input type="radio" value="plain" name="crust" /> Plain Crust
+            <input type="radio" value="garlicButter" name="crust" /> Garlic Butter Crust
+            <input type="radio" value="cheeseStuffed" name="crust" /> Cheese Stuffed Crust (+$3)
+            <input type="radio" value="spicyCrust" name="crust" /> Spicy Crust
+            <input type="radio" value="houseSpecial" name="crust" /> House Special Crust
+        </form>
+        <h2>Step 3: Sauce</h2>
+        <form>
+            <input type="radio" value="marinara" name="sauce" /> Marinara Sauce
+            <input type="radio" value="white" name="sauce" /> White Sauce
+            <input type="radio" value="barbeque" name="sauce" /> Barbeque Sauce
+            <input type="radio" value="no" name="sauce" /> No Sauce
+        </form>
+        <h2>Step 4: Cheese</h2>
+        <form>
+            <input type="radio" value="marinara" name="cheese" /> Regular
+            <input type="radio" value="white" name="cheese" /> No Cheese
+            <input type="radio" value="barbeque" name="cheese" /> Extra Cheese (+$3)
+        </form>
+        <h2>Step 5: Meat - Select 1</h2>
+        <p><em>(+$1 per additional topping)</em></p>
+        <form>
+            <input type="checkbox" value="pepperoni" name="meat" /> Pepperoni
+            <input type="checkbox" value="sausage" name="meat" /> Sausage
+            <input type="checkbox" value="canadianBacon" name="meat" /> Canadian Bacon
+            <input type="checkbox" value="groundBeef" name="meat" /> Ground Beef
+            <input type="checkbox" value="anchovy" name="meat" /> Anchovy
+            <input type="checkbox" value="chicken" name="meat" /> Chicken
+        </form>
+        <h2>Step 6: Veggie - Select 1</h2>
+        <p><em>(+$1 per additional topping)</em></p>
+        <form>
+            <input type="checkbox" value="tomatoes" name="veggie" /> Tomatoes
+            <input type="checkbox" value="sausage" name="veggie" /> Onions
+            <input type="checkbox" value="canadianBacon" name="veggie" /> Olives
+            <input type="checkbox" value="groundBeef" name="veggie" /> Green Peppers
+            <input type="checkbox" value="anchovy" name="veggie" /> Mushrooms
+            <input type="checkbox" value="chicken" name="veggie" /> Pineapple
+            <input type="checkbox" value="spinach" name="veggie" /> Spinach
+            <input type="checkbox" value="jalapeno" name="veggie" /> Jalapeno
+        </form>
+        <!--????????????????????????????????
+    Right here, can you come up with a way to provide a
+    running total as buttons are selected/ check boxes are checked?
+    -->
+
+
+    </div>
+    <!--END order form-->
+
+    <script>
+
+    </script>
+
+</body>
+</html>
