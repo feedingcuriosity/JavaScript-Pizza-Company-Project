@@ -1,0 +1,181 @@
+body {
+    background-color: #343a40;
+}
+
+/****************************
+        NAVIGATION STYLING
+****************************/
+/*Centering Navbar
+.navbarContainer {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+    .navbarContainer > li {
+        display: inline-block;
+        float: none;
+    }
+    */
+
+/****************************
+        HOME STYLING
+****************************/
+#home h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 10px red;    
+    padding-top: 20px;
+    padding-bottom: 48px;
+}
+
+#orderForm h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+    padding: 60px 0;
+   
+    
+}
+
+#home {
+    height: 1000px;
+    width: 100%;
+}
+
+#break {
+    background-color:black;
+}
+
+.backgroundimage {
+    background-image: url("Pizza.jpg");
+    background-size:cover;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    height:inherit;
+}
+
+
+/****************************
+        MENU STYLING
+****************************/
+#menu {
+    background-image: url("4k-wallpaper-architecture-background-1308624.jpg");
+    background-size: cover;
+    background-color: #343a40;
+}
+
+
+#menu h2, #orderForm h2 {
+    color: white;
+    /*font-family: monospace;*/
+    text-shadow: 1px 1px 2px white;
+    border-bottom: 2px groove white;
+    text-transform: uppercase;
+
+
+}
+
+p {
+    color: white;
+    /*font-family: monospace;*/
+    font-size: 16px;
+}
+
+li {
+    color: white;
+    /*font-family: monospace;*/
+    font-size: 16px;
+}
+
+
+#break {
+    width: 100%;
+    height:600px;
+}
+
+.imgbreak {
+    float:left;
+    width:33.3%;
+    height:100%;
+    object-fit:cover;
+}
+
+/****************************
+        ORDER FORM STYLING
+****************************/
+
+
+#orderForm {
+    background-color: #343a40;
+    color: white;
+    /*font-family: monospace;*/
+    background-image: url("4k-wallpaper-architecture-background-1308624.jpg");
+    margin-top: 60px;
+}
+
+#orderForm p, em {
+    color: white;
+}
+
+.row {
+    padding: 20px 20px;
+}
+
+#pizzameat, #pizzaveggie, #pizzacheese, #pizzasauce, #pizzacrust, #pizzasize {
+    font-size:20px;
+    line-height: 40px;
+   }
+
+/****************************
+   RECEIPT/MODAL STYLING
+****************************/
+
+#modalButton {
+    /*background-image: url("4k-wallpaper-architecture-background-1308624.jpg");*/
+    background-size: cover;
+    text-align:center;
+    padding: 15px 0;
+   
+}
+
+#receipt{
+    color: black;
+    background-image: url("4k-wallpaper-architecture-background-1308624.jpg");
+    background-size: cover;
+
+       }
+
+#receipt h1, p{
+    color: black;
+   }
+
+#exampleModalLabel {
+    text-align: center;
+    font-size:30px;
+}
+
+.btn {
+    display:block;
+    align-content: center;
+    
+}
+/****************************
+        FOOTER STYLING
+****************************/
+footer {
+    color: white;
+    background-image: url("4k-wallpaper-architecture-background-1308624.jpg");
+    background-size: cover;
+    background-color: #343a40;
+    padding: 30px 0 60px 0;
+}
+
+footer p {
+    text-align:center;
+    color: white;
+}

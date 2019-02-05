@@ -1,148 +1,515 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>Pizza Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-    <!--Navigation-->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#orderForm">Order Now!</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-----------------------------
+        Navigation-----------------
+    ------------------------------>
+  
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
 
-    <div id="home">
-        <h1>PIZZA COMPANY</h1>
-        <hr />
-        <p>Customizable pizzas great for anyone in the family.</p> <br />
-    </div>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">The Pizza Company <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#orderForm">Order Now!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
 
-
-    <!--START Menu with size prices and toppings/essentials-->
-    <div id="Menu">
-        <h1> MENU</h1>
-        <hr />
-        <h2> Sizes </h2>
-        <p> Personal<br /><em>$6.00</em></p>
-        <p> Medium<br /><em>$10.00</em></p>
-        <p> Large<br /> <em>$14.00</em></p>
-        <p> XLarge<br /> <em>$16.00</em></p>
-        <br /><br />
-        <h2> Toppings and Essentials</h2>
-        <p> Toppings <em> (One veggie and One meat is included in the price. Extras are $1.00 per topping.)</em></p>
-
-        <ul>
-            <li>Pepperoni</li>
-            <li>Sausage</li>
-            <li>Canadian Bacon</li>
-            <li>Ground Beef</li>
-            <li>Anchovy</li>
-            <li>Chicken</li>
-            <li>Tomatoes</li>
-            <li>Onions</li>
-            <li>Olives</li>
-            <li>Green Peppers</li>
-            <li>Mushrooms</li>
-            <li>Pineapple</li>
-            <li>Spinach</li>
-            <li>Jalapeno</li>
-        </ul>
-        <p> Crust</p>
-        <ul>
-            <li>Plain Crust</li>
-            <li>Garlic Butter Crust</li>
-            <li>Cheese Stuffed Crust*</li>
-            <li>Spicy Crust</li>
-            <li>House Special Crust</li>
-        </ul>
-        <em>*The Cheese Stuffed Crust is an additional $3.00.</em>
-        <p> Cheese</p>
-        <ul>
-            <li>Regular</li>
-            <li>No Cheese</li>
-            <li>Extra Cheese*</li>
-        </ul>
-        <em>*Extra cheese is an additional $3.00</em>
-        <p> Sauce</p>
-        <ul>
-            <li>Marinara Sauce</li>
-            <li>White Sauce</li>
-            <li>Barbeque Sauce</li>
-            <li>No Sauce</li>
-        </ul>
-    </div>
-    <!-- END Menu with size prices and toppings/essentials-->
+            </div>
+        </nav>
     
-    <!--START order form-->
-    <div id="orderForm">
-        <h1> Order Form</h1>
-        <hr />
-        <p><em>BUILD ONE PIZZA AT A TIME.</em></p>
-        <h2>Step 1: Size</h2>
-        <form>
-            <input type="radio" value="personal" name="size" /> Personal
-            <input type="radio" value="medium" name="size" /> Medium
-            <input type="radio" value="large" name="size" /> Large
-            <input type="radio" value="extraLarge" name="size" /> Extra Large
-        </form>
-        <h2>Step 2: Crust</h2>
-        <form>
-            <input type="radio" value="plain" name="crust" /> Plain Crust
-            <input type="radio" value="garlicButter" name="crust" /> Garlic Butter Crust
-            <input type="radio" value="cheeseStuffed" name="crust" /> Cheese Stuffed Crust (+$3)
-            <input type="radio" value="spicyCrust" name="crust" /> Spicy Crust
-            <input type="radio" value="houseSpecial" name="crust" /> House Special Crust
-        </form>
-        <h2>Step 3: Sauce</h2>
-        <form>
-            <input type="radio" value="marinara" name="sauce" /> Marinara Sauce
-            <input type="radio" value="white" name="sauce" /> White Sauce
-            <input type="radio" value="barbeque" name="sauce" /> Barbeque Sauce
-            <input type="radio" value="no" name="sauce" /> No Sauce
-        </form>
-        <h2>Step 4: Cheese</h2>
-        <form>
-            <input type="radio" value="marinara" name="cheese" /> Regular
-            <input type="radio" value="white" name="cheese" /> No Cheese
-            <input type="radio" value="barbeque" name="cheese" /> Extra Cheese (+$3)
-        </form>
-        <h2>Step 5: Meat - Select 1</h2>
-        <p><em>(+$1 per additional topping)</em></p>
-        <form>
-            <input type="checkbox" value="pepperoni" name="meat" /> Pepperoni
-            <input type="checkbox" value="sausage" name="meat" /> Sausage
-            <input type="checkbox" value="canadianBacon" name="meat" /> Canadian Bacon
-            <input type="checkbox" value="groundBeef" name="meat" /> Ground Beef
-            <input type="checkbox" value="anchovy" name="meat" /> Anchovy
-            <input type="checkbox" value="chicken" name="meat" /> Chicken
-        </form>
-        <h2>Step 6: Veggie - Select 1</h2>
-        <p><em>(+$1 per additional topping)</em></p>
-        <form>
-            <input type="checkbox" value="tomatoes" name="veggie" /> Tomatoes
-            <input type="checkbox" value="sausage" name="veggie" /> Onions
-            <input type="checkbox" value="canadianBacon" name="veggie" /> Olives
-            <input type="checkbox" value="groundBeef" name="veggie" /> Green Peppers
-            <input type="checkbox" value="anchovy" name="veggie" /> Mushrooms
-            <input type="checkbox" value="chicken" name="veggie" /> Pineapple
-            <input type="checkbox" value="spinach" name="veggie" /> Spinach
-            <input type="checkbox" value="jalapeno" name="veggie" /> Jalapeno
-        </form>
-        <!--????????????????????????????????
-    Right here, can you come up with a way to provide a
-    running total as buttons are selected/ check boxes are checked?
-    -->
+
+   <!-- <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">The Pizza Company<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#orderForm">Order Now!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div> -->
+
+    <!-----------------------------
+          Home Banner--------------
+    ------------------------------>
+    <div id="home" style="padding-top:48px;">
+        <!--set padding-top to 48 to match the navigation bar element+padding dimensions. This applies to each section to get the tags to direct properly-->
+        <div class="backgroundimage">
+            <h1>locally sourced ingredients. made fresh. fully customizable. </h1>
+        </div>
+    </div>
+
+
+    <!-----------------------------
+        MENU-----------------------
+    ------------------------------>
+    <!--<div id="menu">
+        <h1>Menu</h1>
+        <h2 style="text-align:center;"> sizes </h2>
+        <div class="row">
+            <div class="col-sm">
+                <ul>
+                    <li>personal<br /><em>$6.00</em></li>
+                    <li>medium<br /><em>$10.00</em></li>
+                    <li>large<br /><em>$14.00</em></li>
+                    <li>extra large<br /><em>$16.00</em></li>
+                </ul>
+            </div>
+        </div>
+        <h2 style="text-align:center;"> available toppings and essentials</h2>
+        <div class="row">
+            <div class="col-sm" style="margin-left: 20px;">
+                <p> Toppings* </p>
+                <ul>
+                    <li>Pepperoni</li>
+                    <li>Sausage</li>
+                    <li>Canadian Bacon</li>
+                    <li>Ground Beef</li>
+                    <li>Anchovy</li>
+                    <li>Chicken</li>
+                    <li>Tomatoes</li>
+                    <li>Onions</li>
+                    <li>Olives</li>
+                    <li>Green Peppers</li>
+                    <li>Mushrooms</li>
+                    <li>Pineapple</li>
+                    <li>Spinach</li>
+                    <li>Jalapeno</li>
+                </ul>
+                <em> *One meat and one veggie is included in the price. Extras are $1.00 per topping.</em>
+            </div>
+            <div class="col-sm">
+                <p> Crust</p>
+                <ul>
+                    <li>Plain Crust</li>
+                    <li>Garlic Butter Crust</li>
+                    <li>Cheese Stuffed Crust*</li>
+                    <li>Spicy Crust</li>
+                    <li>House Special Crust</li>
+                </ul>
+                <em>*The Cheese Stuffed Crust is an additional $3.00.</em>
+            </div>
+            <div class="col-sm">
+                <p> Cheese</p>
+                <ul>
+                    <li>Regular</li>
+                    <li>No Cheese</li>
+                    <li>Extra Cheese*</li>
+                </ul>
+                <em>*Extra cheese is an additional $3.00</em>
+            </div>
+            <div class="col-sm">
+                <p> Sauce</p>
+                <ul>
+                    <li>Marinara Sauce</li>
+                    <li>White Sauce</li>
+                    <li>Barbeque Sauce</li>
+                    <li>No Sauce</li>
+                </ul>
+            </div>
+        </div>
+    </div>-->
+    <!-- END Menu with size prices and toppings/essentials-->
+    <!------------------------
+        START order form------
+        ---------------------->
+    <div class="container-fluid">
+        <div id="orderForm">
+            <h1> BUILD YOUR PERFECT PIZZA</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Size</h2>
+                    <form id="pizzasize">
+                        <input type="radio" value="Personal Pizza" name="size" /> Personal ($6.00) <br />
+                        <input type="radio" value="Medium Pizza" name="size" /> Medium ($10.00) <br />
+                        <input type="radio" value="Large Pizza" name="size" /> Large ($14.00) <br />
+                        <input type="radio" value="Extra Large Pizza" name="size" /> Extra Large ($16.00)
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <h2>Crust</h2>
+                    <form id="pizzacrust">
+                        <input type="radio" value="Plain Crust" name="crust" /> Plain Crust<br />
+                        <input type="radio" value="Garlic Butter Crust" name="crust" /> Garlic Butter Crust<br />
+                        <input type="radio" value="Cheese Stuffed Crust" name="crust" /> Cheese Stuffed Crust (+$3)<br />
+                        <input type="radio" value="Spicy Crust Crust" name="crust" /> Spicy Crust<br />
+                        <input type="radio" value="House Special Crust" name="crust" /> House Special Crust
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <h2>Sauce</h2>
+                    <form id="pizzasauce">
+                        <input type="radio" value="Marinara Sauce" name="sauce" /> Marinara Sauce<br />
+                        <input type="radio" value="White Sauce" name="sauce" /> White Sauce<br />
+                        <input type="radio" value="Barbeque Sauce" name="sauce" /> Barbeque Sauce<br />
+                        <input type="radio" value="No Sauce" name="sauce" /> No Sauce
+                    </form>
+                </div>
+            </div>
+            <br /><br /><br />
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Cheese</h2>
+                    <form id="pizzacheese">
+                        <input type="radio" value="Regular Cheese" name="cheese" /> Regular<br />
+                        <input type="radio" value="No Cheese" name="cheese" /> No Cheese<br />
+                        <input type="radio" value="Extra Cheese" name="cheese" /> Extra Cheese (+$3)
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <h2>Meat</h2>
+                    <p>One topping included in price<em> [additional selection(s) are +$1/topping]</em></p>
+                    <form id="pizzameat">
+                        <input type="checkbox" value="Pepperoni" name="meat" /> Pepperoni
+                        <input type="checkbox" value="Sausage" name="meat" /> Sausage
+                        <input type="checkbox" value="Canadian Bacon" name="meat" /> Canadian Bacon<br />
+                        <input type="checkbox" value="Ground Beef" name="meat" /> Ground Beef
+                        <input type="checkbox" value="Anchovy" name="meat" /> Anchovy
+                        <input type="checkbox" value="Chicken" name="meat" /> Chicken
+                    </form>
+                </div>
+                <div class="col-sm">
+                    <h2>Veggie</h2>
+                    <p>One topping included in price<em> [additional selection(s) are +$1/topping]</em></p>
+                    <form id="pizzaveggie">
+                        <input type="checkbox" value="Tomatoes" name="veggie" /> Tomatoes
+                        <input type="checkbox" value="Onions" name="veggie" /> Onions
+                        <input type="checkbox" value="Olives" name="veggie" /> Olives<br />
+                        <input type="checkbox" value="Green Peppers" name="veggie" /> Green Peppers
+                        <input type="checkbox" value="Mushrooms" name="veggie" /> Mushrooms
+                        <input type="checkbox" value="Pineapple" name="veggie" /> Pineapple<br />
+                        <input type="checkbox" value="Spinach" name="veggie" /> Spinach
+                        <input type="checkbox" value="Jalapeno" name="veggie" /> Jalapeno
+                    </form>
+                </div>
+            </div>
+        </div>
 
 
     </div>
+
+    <!-----------------------------
+     Modal Receipt--------------
+     ------------------------------>
+    <!-- Button trigger modal -->
+    <div id="modalButton">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#receipt" onclick="calculateTotal()">
+            Order Now!
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="receipt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thank you for your order!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 id="thankYou"></h1>
+                    <p id="sizeSelectionPrice"></p>
+                    <p id="crustSelectionPrice"></p>
+                    <p id="sauceSelectionPrice"></p>
+                    <p id="cheeseSelectionPrice"></p>
+                    <p id="meatSelectionPrice"></p>
+                    <p id="veggieSelectionPrice"></p>
+                    <h2 id="totalPrice"></h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--END order form-->
+    <!-----------------------------
+        3 Image Break--------------
+    ------------------------------>
+    <div id="break">
+
+        <img class="imgbreak" src="baked-chef-cook-784631.jpg" alt="" />
+        <img class="imgbreak" src="baked-baking-chef-784633.jpg" alt="" />
+        <img class="imgbreak" src="dough-flour-hands-784636.jpg" alt="" />
+    </div>
+
+
+
+    <!-----------------------------
+        FOOTER--------------
+    ------------------------------>
+
+    <footer id="footer">
+        <br /><br /><br /><br />
+        <p>The Pizza Company</p>
+        <p>ThePizzaCompany@gmail.com</p>
+    </footer>
+
+    <!----------------------------------
+    JavaScript----------------------
+    ------------------------------->
 
     <script>
+        //STEP 1. Function to call the following functions onclick of "order" button
+
+        function calculateTotal() {
+
+            var sizePrices = new Array();
+            sizePrices["Personal Pizza"] = 6;
+            sizePrices["Medium Pizza"] = 10;
+            sizePrices["Large Pizza"] = 14;
+            sizePrices["Extra Large Pizza"] = 16;
+
+            var crustPrices = new Array();
+            crustPrices["Plain Crust"] = 0;
+            crustPrices["Garlic Butter Crust"] = 0;
+            crustPrices["Cheese Stuffed Crust"] = 3;
+            crustPrices["Spicy Crust Crust"] = 0;
+            crustPrices["House Special Crust"] = 0;
+
+            var cheesePrices = new Array();
+            cheesePrices["Regular Cheese"] = 0;
+            cheesePrices["No Cheese"] = 0;
+            cheesePrices["Extra Cheese"] = 3;
+
+
+            //Script for pizza size selection and price
+            function getSizePrice() {
+
+
+                var sizePrice = 0;
+                var sizeForm = document.forms["pizzasize"];
+                var size = sizeForm.elements["size"];
+                for (var i = 0; i < size.length; i++) {
+                    if (size[i].checked) {
+                        sizePrice = sizePrices[size[i].value];
+                        break;
+                    }
+                }
+                return sizePrice;
+
+            }
+
+            function getSizeSelection() {
+                var sizeSelection = ""
+                var sizeForm = document.forms["pizzasize"];
+                var size = sizeForm.elements["size"];
+                for (var i = 0; i < size.length; i++) {
+                    if (size[i].checked) {
+                        sizeSelection = size.value;
+                        break;
+                    }
+                }
+                return sizeSelection;
+
+
+            }
+            //Script for pizza crust selection and price
+            function getCrustPrice() {
+
+
+                var crustPrice = 0;
+                var crustForm = document.forms["pizzacrust"];
+                var crust = crustForm.elements["crust"];
+                for (var i = 0; i < crust.length; i++) {
+                    if (crust[i].checked) {
+                        crustPrice = crustPrices[crust[i].value];
+                        break;
+                    }
+                }
+                return crustPrice;
+
+            }
+
+            function getCrustSelection() {
+                var crustSelection = ""
+                var crustForm = document.forms["pizzacrust"];
+                var crust = crustForm.elements["crust"];
+                for (var i = 0; i < crust.length; i++) {
+                    if (crust[i].checked) {
+                        crustSelection = crust.value;
+                        break;
+                    }
+                }
+                return crustSelection;
+            }
+
+            //Script for pizza sauce selection
+
+            function getSauceSelection() {
+                var sauceSelection = ""
+                var sauceForm = document.forms["pizzasauce"];
+                var sauce = sauceForm.elements["sauce"];
+                for (var i = 0; i < sauce.length; i++) {
+                    if (sauce[i].checked) {
+                        sauceSelection = sauce.value;
+                        break;
+                    }
+                }
+                return sauceSelection;
+            }
+
+            //Script for pizza cheese selection and price
+            function getCheesePrice() {
+
+
+                var cheesePrice = 0;
+                var cheeseForm = document.forms["pizzacheese"];
+                var cheese = cheeseForm.elements["cheese"];
+                for (var i = 0; i < cheese.length; i++) {
+                    if (cheese[i].checked) {
+                        cheesePrice = cheesePrices[cheese[i].value];
+                        break;
+                    }
+                }
+                return cheesePrice;
+
+            }
+
+            function getCheeseSelection() {
+                var cheeseSelection = ""
+                var cheeseForm = document.forms["pizzacheese"];
+                var cheese = cheeseForm.elements["cheese"];
+                for (var i = 0; i < cheese.length; i++) {
+                    if (cheese[i].checked) {
+                        cheeseSelection = cheese.value;
+                        break;
+                    }
+                }
+                return cheeseSelection;
+            }
+
+            //Script for pizza meat toppings selection and price
+            function getMeatPrice() {
+
+                var meatForm = document.forms["pizzameat"];
+                var meat = meatForm.elements["meat"];
+                var meatCounter = 0;
+                for (var i = 0; i < meat.length; i++) {
+                    if (meat[i].checked) {
+                        meatCounter = meatCounter + 1;
+                        ;
+                    }
+                }
+                return meatCounter;
+
+            }
+
+            function getMeatSelection() {
+                var meatSelection = "";
+                var meatForm = document.forms["pizzameat"];
+                var meat = meatForm.elements["meat"];
+                for (var i = 0; i < meat.length; i++) {
+                    if (meat[i].checked) {
+                        meatSelection = meatSelection + meat[i].value + ".  ";
+
+                    }
+
+                }
+                return meatSelection;
+            }
+
+            //Script for pizza veggie toppings selection and price
+            function getVeggiePrice() {
+
+                var veggieForm = document.forms["pizzaveggie"];
+                var veggie = veggieForm.elements["veggie"];
+                var veggieCounter = 0;
+                for (var i = 0; i < veggie.length; i++) {
+                    if (veggie[i].checked) {
+                        veggieCounter = veggieCounter + 1;
+                        ;
+                    }
+                }
+                return veggieCounter;
+
+            }
+
+            function getVeggieSelection() {
+                var veggieSelection = "";
+                var veggieForm = document.forms["pizzaveggie"];
+                var veggie = veggieForm.elements["veggie"];
+                for (var i = 0; i < veggie.length; i++) {
+                    if (veggie[i].checked) {
+                        veggieSelection = veggieSelection + veggie[i].value + ".  ";
+
+                    }
+
+                }
+                return veggieSelection;
+            }
+
+            var sizePrice = getSizePrice();
+            var pizzaSize = getSizeSelection();
+            var crustPrice = getCrustPrice();
+            var pizzaCrust = getCrustSelection();
+            var pizzaSauce = getSauceSelection();
+            var cheesePrice = getCheesePrice();
+            var pizzaCheese = getCheeseSelection();
+            var meatPrice = (getMeatPrice() - 1);
+            var pizzaMeat = getMeatSelection();
+            var veggiePrice = (getVeggiePrice() - 1);
+            var pizzaVeggie = getVeggieSelection();
+            var total = sizePrice + crustPrice + cheesePrice + meatPrice + veggiePrice;
+
+            //Final Step: Output Receipt
+            //document.getElementById("runningTotal").innerHTML = total;
+
+            document.getElementById('sizeSelectionPrice').innerHTML =
+                pizzaSize + ". " + "$" + sizePrice;
+            document.getElementById('crustSelectionPrice').innerHTML =
+                pizzaCrust + ". " + "$" + crustPrice;
+            document.getElementById('sauceSelectionPrice').innerHTML =
+                pizzaSauce + ". " + "$0";
+            document.getElementById('cheeseSelectionPrice').innerHTML =
+                pizzaCheese + ". " + "$" + cheesePrice;
+
+            document.getElementById('meatSelectionPrice').innerHTML =
+                pizzaMeat + " " + "$" + meatPrice;
+
+            document.getElementById('veggieSelectionPrice').innerHTML =
+                pizzaVeggie + " " + "$" + veggiePrice;
+
+            document.getElementById('totalPrice').innerHTML = "TOTAL:   " + "$" + total;
+
+        }
+
+
+
 
     </script>
+
 
 </body>
 </html>
